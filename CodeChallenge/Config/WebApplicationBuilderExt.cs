@@ -9,11 +9,22 @@ namespace CodeChallenge.Config
     public static class WebApplicationBuilderExt
     {
         private static readonly string DB_NAME = "EmployeeDB";
+
+        private static readonly string EMPCOMP_DB_NAME = "EmpCompensationDB";
+
         public static void UseEmployeeDB(this WebApplicationBuilder builder)
         {
             builder.Services.AddDbContext<EmployeeContext>(options =>
             {
                 options.UseInMemoryDatabase(DB_NAME);
+            });
+        }
+
+        public static void UseEmpCompensationDB(this WebApplicationBuilder builder)
+        {
+            builder.Services.AddDbContext<EmployeeContext>(options =>
+            {
+                options.UseInMemoryDatabase(EMPCOMP_DB_NAME);
             });
         }
     }

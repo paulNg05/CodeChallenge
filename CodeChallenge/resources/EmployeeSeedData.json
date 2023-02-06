@@ -48,6 +48,18 @@
     "firstName": "George",
     "lastName": "Harrison",
     "position": "Developer III",
-    "department": "Engineering"
+    "department": "Engineering",
+    "directReports": [
+      { "employeeId": "83975945-27f7-4155-bf98-a4d52c4755de" }
+    ]
+  },
+  {
+    "employeeId": "83975945-27f7-4155-bf98-a4d52c4755de",
+    "firstName": "Steven",
+    "lastName": "Konovaski",
+    "position": "Developer III",
+    "department": "Engineering",
+    "directReports": []
   }
+
 ]
